@@ -4,7 +4,6 @@ import Home from './Container/Home';
 import Header from './Container/Header';
 import History from './Container/History';
 import Login from './Container/Login';
-import Register from './Container/Register';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
