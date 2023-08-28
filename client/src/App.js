@@ -32,9 +32,8 @@ function App() {
   return (
     <div className=" w-full lg:w-2/3 mx-auto h-2/3 border-2">
     <Header/>
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+ {/* eslint-disable-next-line react-hooks/exhaustive-deps */} 
     {renderPages()}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     </div>
   );
 }
