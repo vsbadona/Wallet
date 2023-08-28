@@ -14,7 +14,7 @@ const walletSlice = createSlice({
         user(state,action){
             state.user = action.payload
         }, toogleLogin(state, action) {
-            if (state.login == false) {
+            if (state.login === false) {
                 state.login = true
             } else {
                 state.login = false

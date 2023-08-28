@@ -1,5 +1,4 @@
-import { configureStore,combineReducers } from "@reduxjs/toolkit";
-import cartSlice from "./walletSlice";
+import { configureStore } from "@reduxjs/toolkit";
 import walletSlice from "./walletSlice";
 
 
