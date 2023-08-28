@@ -8,7 +8,6 @@ const Header = () => {
   const dispatch = useDispatch()
   const login = useSelector(state => state.login)
   const user = useSelector(state => state.user)
-
   return (
 <div className=' bg-blue-500 text-white rounded-t-lg px-8'>
  <div className="flex flex-col gap-y-5 sm:flex-row items-center justify-between flex-wrap md:flex-nowrap ">

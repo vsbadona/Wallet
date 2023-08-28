@@ -8,7 +8,7 @@ const Home = () => {
   const dispatch = useDispatch()
   const User = useSelector(state => state.user)
   const updateWallet = async() => {
-    const data = await axios.get(`http://localhost:5000/wallet?_id=${User._id}&amount=${amount}`)
+    const data = await axios.get(`${process.env.REACT_APP_API}?_id=${User._id}&amount=${amount}`)
     const response = data.data;
     if(response.success){
       dispatch(user(response.data))

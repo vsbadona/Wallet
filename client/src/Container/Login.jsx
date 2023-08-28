@@ -13,7 +13,7 @@ const Login = () => {
     }
      const handleClick = async() => {
 if(page){
-  const response = await axios.get(`http://localhost:5000/login?email=${detail.email}&password=${detail.password}`)
+  const response = await axios.get(`${process.env.REACT_APP_API}?email=${detail.email}&password=${detail.password}`)
   const data = response.data
   if(data.success){
     dispatch(toogleLogin());
@@ -23,7 +23,7 @@ if(page){
   }
 }else{
   const {name,email,password}=detail
-  const response = await axios.post("http://localhost:5000/register",{name,email,password})
+  const response = await axios.post(`${process.env.REACT_APP_API}`,{name,email,password})
   const data = response.data
   if(data.success){
     setPage(true)
@@ -33,11 +33,7 @@ if(page){
 }
          }
 
-         useEffect(()=>{
-            const Id = Cookies.get("Id")
-            if(Id){
-            // navigate('/')
-         }},[])
+     
      
   return (
 
